@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+## Welcome to Guide Page
 
-You can use the [editor on GitHub](https://github.com/poscoict-glueframework/poscoict-glueframework.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Documentation
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+온라인으로 제공되는 문서는 다음과 같습니다.
 
-### Markdown
+* [Glue Framework 4.2](https://www.solutionpot.co.kr/doc/framework/)
+* [Glue Framework 5.1](https://poscoict-glueframework.github.io/5.1/docs/)
+* [Glue Plugins](https://www.solutionpot.co.kr/doc/plugins/)
+* [Glue Master](https://www.solutionpot.co.kr/doc/master/)
+* [Glue Security](https://www.solutionpot.co.kr/doc/security/)
+* [Glue Job Scheduler](https://www.solutionpot.co.kr/doc/scheduler/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Download
 
-```markdown
-Syntax highlighted code block
+[https://www.solutionpot.co.kr](https://www.solutionpot.co.kr) 로그인 후 다운로드 가능합니다.  
+게스트로그인시 무료 다운로드가능한 목록입니다.
 
-# Header 1
-## Header 2
-### Header 3
+* Glue Framework 4.2 ( GlueSDK.zip )
+* Glue Framework 5.0 ( GlueSDK.zip )
+* Glue Framework 5.1 ( GlueSDK.zip )
+* GlueMobile ( GlueMobile.zip )
+* PosBee 4.0.0
+* 기타파일 ( eclipse_plugins.zip )
 
-- Bulleted
-- List
+다음은 제한적으로 다운로드를 제공하는 목록입니다. 관리자에게 문의하세요.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/poscoict-glueframework/poscoict-glueframework.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* Glue Frameowrk 3 ( GlueSDK.zip )
+* Glue Securiy ( glue-security.zip )
+* Glue Job Scheduler ( GlueJobScheduler.zip )
+* Glue Master 1 ( GlueMaster.zip )
+* Glue Master 2.1 ( glue-master.zip )
+* uCUBE 4.3
+* PosBee 4.1.0
