@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 theme: jekyll-theme-leap-day
 #theme: jekyll-theme-dinky
 baseurl: /
@@ -19,6 +18,3 @@ defaults:
 nav_list:
   Home: ['Home', '/', 'fa-home']
   Documentaion: ['Doc', '/5.1/docs/index', 'fa-book']
-=======
-theme: jekyll-theme-dinky
->>>>>>> 647c7d579c96d0c504b069266856c2ee93b82b98
