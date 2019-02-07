@@ -1,5 +1,3 @@
-# index
-
 1. [서론](./intro.html)
 1. [개발환경 설정](./env.html)
     * [사전준비](./env.html)
