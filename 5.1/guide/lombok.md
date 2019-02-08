@@ -32,7 +32,7 @@ java 프로젝트에 lombok 적용과정은 다음과 같습니다.
 
 1. spring boot project 생성하기
 
-1. lombok dependency 추가
+1. lombok dependency 추가하기
     ```xml
     <project>
         <dependencies>
@@ -42,7 +42,7 @@ java 프로젝트에 lombok 적용과정은 다음과 같습니다.
             </dependency>
         </dependencies>
     ```
-3. java code에 lombock annotation 추가  
+1. java code에 lombock annotation 사용하기  
    다음은 User에 @Getter, @Setter를 적용한 예시입니다. 
     ```java
     public class UserTest{

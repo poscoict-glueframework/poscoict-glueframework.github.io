@@ -22,7 +22,7 @@ Spring Boot는 다양한 Starter를 제공합니다.
 * spring-boot-starter-websocket
 * spring-boot-starter-actuator
 
-## <a name="maven"></a>Spring Boot Build Systems
+## <a name="maven"></a>Build Systems
 
 Spring Boot 의 Build System은 Maven과 Gradle을 제공합니다. 여기서는 Maven만을 다룹니다.
 

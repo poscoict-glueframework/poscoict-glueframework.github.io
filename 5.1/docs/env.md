@@ -44,7 +44,7 @@ Java SE 8을 설치합니다.
     ```
     > C:\infra\jdk1.8.0_192\bin\java -version
     ```
-    환경 변수 ( `path=%path%;`*`C:\infra\jdk1.8.0_192\bin`* ) 에 Java 를 추가하면, 다음과 같이 확인가능합니다.
+    환경 변수 ( *`path=%path%;C:\infra\jdk1.8.0_192\bin`* ) 에 Java 를 추가하면, 다음과 같이 확인가능합니다.
 
     ```
     > java -version
@@ -136,7 +136,7 @@ Local Repository(.m2)에 glue library, arche-type 등을 3rd party jar로서 설
     ```bash
     $ /c/infra/apache-maven-3.5.4/bin/mvn -version
     ```
-    환경 변수 ( `path=%path%;`*`C:\infra\apache-maven-3.5.4\bin`* ) 에 Maven을 추가하면, 다음과 같이 확인가능합니다. 
+    환경 변수 ( *`path=%path%;C:\infra\apache-maven-3.5.4\bin`* ) 에 Maven을 추가하면, 다음과 같이 확인가능합니다. 
 
     ```bash
     $ mvn -version

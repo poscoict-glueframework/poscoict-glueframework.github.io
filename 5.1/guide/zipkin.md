@@ -7,7 +7,7 @@
 Zipkin의 [Quickstart](https://zipkin.io/pages/quickstart)에는 Zipkin을 시작하는 3가지 방법이 소개되어 있습니다.
 여기서는 Java로 실행하는 것을 다룹니다.  
 
-# 설치 
+## 설치 
 
 latest release 를 다운로드합니다(ex. zipkin-server-2.12.0-exec.jar). 
 
@@ -16,7 +16,7 @@ $ cd /c/infra/                              # 다운로드 정위치는 C:\infra
 $ java -jar zipkin-server-2.12.0-exec.jar   # http://localhost:9411
 ```
 
-# 예시
+## 실행 예시
 
 * Zipkin 서버 실행로그
 * 마이크로서비스 ( sleuth-order-api, sleuth-payment-api, sleuth-stock-api, sleuth-delivery-api ) 

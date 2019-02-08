@@ -13,9 +13,9 @@ Spring Boot 프로젝트를 생성하는 방법은 여러가지가 있습니다.
 > GitHub의 [glue-maven-project](https://github.com/poscoict-glueframework/glue-examples/tree/master/glue-maven-project) 와 
 > [quick-start](https://github.com/poscoict-glueframework/glue-examples/tree/master/quick-start) 를 참고하세요. 
 
-## <a name="glue_maven_project"></a>Glue Maven Project 생성하기
+## <a name="glue_maven_project"></a>Glue Maven Project
 
-GluePlugin이 설치된 Eclipse에서 프로젝트를 생성합니다. ( Spring Tool Suite 가능 ) 
+Glue Maven Project 는 GluePlugin이 설치된 Eclipse에서 생성하는 프로젝트입니다. ( Spring Tool Suite 가능 ) 
 
 프로젝트는 다음과 같은 순서로 생성할 수 있습니다.
 
@@ -40,8 +40,9 @@ GluePlugin이 설치된 Eclipse에서 프로젝트를 생성합니다. ( Spring 
 5. `pom.xml` 을 확인합니다.  
 ![Image](../images/eclipse_check_pom_file.png)
 
-## <a name="archetype"></a>archetype 에서 Project 생성하기
+## <a name="archetype"></a>archetype
 
+archetype 으로부터 Project 를 생성할 수 있습니다. 
 IDE에서 archetype을 선택해서 프로젝트를 생성합니다. 
 
 다음은 Eclipse에서 프로젝트를 생성하는 방법입니다.
@@ -49,14 +50,14 @@ IDE에서 archetype을 선택해서 프로젝트를 생성합니다.
 1. Eclipse 에서 File 메뉴의 New -> Project 를 실행합니다.([그림](../images/eclipse_menu_file_new.png))  
 ![Image](../images/eclipse_menu_file_new.png)
 
-2. New Project 다이얼로그에서 Maven Project를 선택하고, Next를 클릭합니다.  
+2. New Project 다이얼로그에서 Maven Project를 선택하고, Next를 클릭합니다.([그림](../images/eclipse_default_maven_wizard.png))  
 ![Image](../images/eclipse_default_maven_wizard.png)
 
-3. New Maven Project 다이얼로그에서 Next 를 클릭합니다. Create a simple project 를 체크하지 않습니다.  
+3. New Maven Project 다이얼로그에서 Next 를 클릭합니다. Create a simple project 를 체크하지 않습니다.([그림](../images/eclipse_default_maven_wizard_step1.png))  
 ![Image](../images/eclipse_default_maven_wizard_step1.png)
 
 4. New Maven Project 다이얼로그에서 Filter 에 _mes3_ 을 입력합니다.  
-검색된 것 중에서 _base-archetype_을 선태한 후 Next 를 클릭합니다.    
+검색된 것 중에서 _base-archetype_ 을 선태한 후 Next 를 클릭합니다.    
 ![Image](../images/eclipse_default_maven_wizard_step2.png)
 
     > _mes3_ archetype이 없으면,  
@@ -78,7 +79,7 @@ user Property 를 입력합니다. ( 예시 : _홍길동_ )
 ![Image](../images/eclipse_package_explorer_archetype_prj.png)
 
 
-## <a name="spring_initialzr"></a>Spring Initializr 에서 생성한 Project Import하기
+## <a name="spring_initialzr"></a>Spring Initializr
 
 Spring Initializr([https://start.spring.io](https://start.spring.io))에서 프로젝트를 생성하고, 이를 IDE에서 Import 합니다.
 
@@ -86,12 +87,11 @@ Spring Initializr([https://start.spring.io](https://start.spring.io))에서 프�
 
 1. Spring Initializr 를 실행합니다.  
 사이트에서 Spring Boot 프로젝트를 생성할 수 있습니다.    
-Java / Kotlin / Goovy 
 ![Image](../images/site_spring_initializr.png)
 
-    * 빌드는 Maven을 사용하므로 Maven Project로 합니다.   
-    * 언어는 Java 입니다. 
-    * Spring Boot 버전은 2.0.x 입니다.  
+    * 빌드는 Maven을 사용하므로 Maven Project로 합니다. ( Maven, Gradle 을 선택할 수 있습니다. )
+    * 언어는 Java 입니다. ( Java, Kotlin, Goovy 를 선택할 수 있습니다. )
+    * Spring Boot 버전은 2.0.x 입니다.
 
 2. Generate Project 를 클릭합니다.  
 demo.zip 파일이 다운로드됩니다.

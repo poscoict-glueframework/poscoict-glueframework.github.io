@@ -73,8 +73,10 @@
 1. [Spring Security](./spring-security.html)
 1. Microservice 개발환경
     * [Lombok](../guide/lombok.html)
-    * [h2](./dev/h2.html) [h2-console](./dev/h2.html#h2-console)
-    * [mariadb](./dev/mariadb.html) [HeidiSQL](../guide/heidisql.html)
+    * [h2](./dev/h2.html) 
+        * [h2-console](./dev/h2.html#h2-console)
+    * [mariadb](./dev/mariadb.html) 
+        * [HeidiSQL](../guide/heidisql.html)
     * [kafka](./apache-kafka.html)
     * [activemq](./apache-activemq.html)
     * [gemfire](./pivotal-gemfire.html)
