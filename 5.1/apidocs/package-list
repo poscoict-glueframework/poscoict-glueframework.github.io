@@ -1,0 +1,10 @@
+com.poscoict.glueframework.biz.activity
+com.poscoict.glueframework.biz.control
+com.poscoict.glueframework.configuration
+com.poscoict.glueframework.context
+com.poscoict.glueframework.push.activity
+com.poscoict.glueframework.schema
+com.poscoict.glueframework.schema.parser
+com.poscoict.glueframework.ucube
+com.poscoict.glueframework.ucube.activity
+com.poscoict.glueframework.util
