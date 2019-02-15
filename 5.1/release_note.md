@@ -8,7 +8,7 @@ Released (2019-02-15)
 
 * GlueSDK 수정  
     swagger version up( 2.8.0 -> 2.9.2 )  
-    templateFolder의 pom.xml 수정 ( h2 추가 )
+    templateFolder의 pom.xml 수정 ( h2 추가, spring-boot-starter-parent 제거, spring-boot-maven-plugin 수정 )
 
 * glue-core 의 dependency 수정  
     h2 제거  

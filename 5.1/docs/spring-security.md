@@ -70,7 +70,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 }
 ```
 
-참고사이트
+## Ref. 참고
+
 * [https://www.baeldung.com/spring-boot-security-autoconfiguration](https://www.baeldung.com/spring-boot-security-autoconfiguration) 
 * [https://docs.spring.io/spring-security/site/docs/5.1.2.RELEASE/reference/htmlsingle/#appendix-schema](https://docs.spring.io/spring-security/site/docs/5.1.2.RELEASE/reference/htmlsingle/#appendix-schema)
 * [https://oddpoet.net/blog/2017/04/27/cors-with-spring-security/](https://oddpoet.net/blog/2017/04/27/cors-with-spring-security/)

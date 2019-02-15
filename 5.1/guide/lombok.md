@@ -61,6 +61,6 @@ java 프로젝트에 lombok 적용과정은 다음과 같습니다.
     }    
     ```
 
-## 참고
+## Ref. 참고
 
 * [https://projectlombok.org/](https://projectlombok.org/)

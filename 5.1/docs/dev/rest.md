@@ -53,7 +53,6 @@ public class SampleController {
     }
 }
 ```
-    개발하고자 하는 Application에서 REST API 를 제공하기, 위해서는 
 
 1. 로그확인  
     RequestMappingHandlerMapping의 INFO 로그에서 ***[/edu],methods=[GET]*** 을 확인할 수 있습니다.  
@@ -74,9 +73,9 @@ public class SampleController {
 
 ## Example
 
-제공되는 예제( ***glue-maven-project*** ) 실행 후, 콘솔 로그를 확인해보세요. 
+[glue-maven-project](../glue-examples.html) 예제를 실행해 볼 수 있습니다. 
 
-* java -jar fat.jar 로 실행하기  
+* **java -jar** 로 실행하기  
 ```bash
 $ git clone https://github.com/poscoict-glueframework/glue-examples.git
 $ cd glue-examples/
@@ -85,7 +84,7 @@ $ mvn clean package                   # Maven Build ( Excutable Jar 생성 )
 $ java -jar target/sample.jar         # Excutable Jar 실행
 ```
 
-* spring boot maven plugin 으로 실행하기  
+* **mvn spring-boot:run** 으로 실행하기  
 ```bash
 $ git clone https://github.com/poscoict-glueframework/glue-examples.git
 $ cd glue-examples/
@@ -96,6 +95,11 @@ $ mvn spring-boot:run                 # Spring Boot Maven Plugin으로 실행
 ## Try it
 
 제공된 예제( ***glue-maven-project*** )를 Eclipse에 import 합니다.
+```bash
+$ cp -r glue-examples/glue-maven-project/ sample-x  # sample-x 로 복사
+$ 
+$ # sample-x/pom.xml 의 artifactId 값을 수정한 후 import할 것.
+```
 
 제공된 예제의 *SampleController* 에 삭제 API(DELETE request)를 추가합니다. 
 
@@ -124,3 +128,4 @@ Mapped "{[/edu],methods=[DELETE]}" onto public java.lang.String com.poscoict.sam
 
 * [https://spring.io/understanding/REST](https://spring.io/understanding/REST)
 * [https://spring.io/guides/gs/rest-service/](https://spring.io/guides/gs/rest-service/)
+* [SpringApplication 실행하기](https://poscoict-glueframework.github.io/5.1/docs/dev/spring-boot-run-app.html)

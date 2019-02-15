@@ -4,7 +4,11 @@ Swagger는 REST API 에 대한 매뉴얼 생성 및 테스트 사이트 생성 �
 
 swagger 와 관련된 주요 annotation 은 다음과 같습니다.
 
-* @RestController
+* @EnableSwagger2
+* @Api
+* @ApiOperation
+* @ApiImplicitParams
+* @ApiImplicitParam
  
 Swagger를 사용하기 위해서는 다음 사항이 필요합니다. 
 
@@ -43,6 +47,28 @@ public class SampleApplication {
     }
 }
 ```
+
+1. Docket 
+    [Glue Maven Project](../create-project.html#glue_maven_project)로 프로젝트를 생성하면, 
+    다음과 같은 **Docket** bean 이 있습니다. 
+```java
+@SpringBootApplication
+@EnableSwagger2
+public class SampleApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SampleApplication.class, args);
+    }
+	@Bean
+	public Docket api() {
+		return new Docket(DocumentationType.SWAGGER_2)
+				.select()
+				.apis(RequestHandlerSelectors.any())
+				.paths(PathSelectors.any())
+				.build();
+	}
+}
+```
+
 
 1. 로그확인  
 RequestMappingHandlerMapping의 INFO 로그에서 ***{[/swagger-resources/configuration/ui]}*** 등을 확인할 수 있습니다.  
@@ -113,4 +139,48 @@ $ mvn spring-boot:run                 # Spring Boot Maven Plugin으로 실행
 
 ## Try it
 
+Docket 을 다음과 같이 수정해보고, swagger-ui를 실행해보세요. 
+```java
+@SpringBootApplication
+@EnableSwagger2
+public class SampleApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SampleApplication.class, args);
+    }
+	@Bean
+	public Docket api() {
+		return new Docket(DocumentationType.SWAGGER_2)
+				.select()
+				.apis(RequestHandlerSelectors.basePackage(getClass().getPackage().getName())) // <- 수
+				.paths(PathSelectors.any())
+				.build();
+	}
+}
+```
+
+RestController를 다음과 같이 수정해보고, swagger-ui를 실행해보세요.
+SampleController 클래스에 @Api를 추가합니다.  
+SampleController 의 runGlueActivity 메소드에 @ApiOperation과 ApiImplicitParams 를 추가합니다. 
+```java
+@Api(tags={"샘플컨트롤러"}, description="Swagger @ApiXXXX 테스트용입니다.")
+@RestController
+@RequestMapping( value = "/edu" )
+public class SampleController
+{
+// 중략
+    
+    @ApiOperation(value = "GlueActivity 실행예제")
+    @ApiImplicitParams({
+    	@ApiImplicitParam(name = "serviceName", value = "GlueService명", required = true, dataType = "string", paramType = "path", defaultValue = "no-service"),
+    	@ApiImplicitParam(name = "empno", value = "emp number", required = true, dataType = "string", paramType = "query", defaultValue = "1"),
+    	@ApiImplicitParam(name = "ename", value = "emp name", required = true, dataType = "string", paramType = "query", defaultValue = "POSCOICT")})
+    @PostMapping( path = "{serviceName}", params = { "empno", "ename" } )
+    public void runGlueActivity( @PathVariable String serviceName, @RequestParam String empno, @RequestParam String ename )
+    {
+
+// 중략
+```
+
 ## Ref. 참고
+
+* [http://springfox.github.io/springfox/docs/current/](http://springfox.github.io/springfox/docs/current/)

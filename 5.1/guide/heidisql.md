@@ -13,7 +13,7 @@ HeidiSQL은 윈도우에서만 동작하므로, Mac 또는 Linux 사용자는 DB
 1. 세션(DB 연결정보) 를 생성합니다. 
 ![Image](../images/heidisql-session.png)
 
-## 참고
+## Ref. 참고
 
 * [https://www.heidisql.com](https://www.heidisql.com)
 * [https://dbeaver.io](https://dbeaver.io/)

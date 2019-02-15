@@ -18,7 +18,7 @@ Glue Maven Project의 pom.xml에서 spring 버전을 확인할 수 있습니다.
 |Spring Cloud|Finchley.SR2|
 |Spring Boot|2.0.6.RELEASE|
 
-다음은 pom.xml 의 일부입니다
+다음은 pom.xml 의 일부입니다. 
 ```xml
 <project>
     <properties>
@@ -28,19 +28,9 @@ Glue Maven Project의 pom.xml에서 spring 버전을 확인할 수 있습니다.
 </project>
 ```
 
-## Example
-
-예제는 [GitHub](https://github.com/poscoict-glueframework/glue-examples)의 glue-maven-project와 quick-start를 참고하세요.
-
-```bash
-git clone https://github.com/poscoict-glueframework/glue-examples.git
-``` 
-
-Eclipse에서 `glue-maven-project` 와 `quick-start` 를 import 하면 다음과 같습니다.
-![Image](../images/example-glue-maven-project.png)
-![Image](../images/example-quick-start.png)
-
 ## Ref. 참고
 
+* [Spring Framework Versions](https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions)
+* [Spring Boot Wikis](https://github.com/spring-projects/spring-boot/wiki)
+* [Spring Cloud의 Release Trains](http://spring.io/projects/spring-cloud#release-trains)
 * [https://opennote46.tistory.com/123](https://opennote46.tistory.com/123)
-* [https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies/2.0.6.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies/2.0.6.RELEASE)

@@ -28,17 +28,24 @@ Glue Maven Project 는 GluePlugin이 설치된 Eclipse에서 생성하는 프로
     > New Project 다이얼로그에서 Glue Framework이 보이지 않으면,   
     > [여기](./env-glue.html#GluePlugins)를 참고해서 GluePlugin을 설치하세요.
 
-3. Project name 을  _glue-demo_ 라고 입력한 후, Finish 버튼을 클릭합니다.([그림](../images/eclipse_new_project.png))    
+3. Project name 을  *sample* 라고 입력한 후, Finish 버튼을 클릭합니다.([그림](../images/eclipse_new_project.png))    
 ![Image](../images/eclipse_new_project_crop.png)
 
-4. Package Explorer 에서  _glue-demo_ 을 확인합니다.  
+4. Package Explorer 에서  *sample* 을 확인합니다.  
 ![Image](../images/eclipse_package_explorer_glue_maven_prj.png)
 
-    > 생성된 Project 에서 glue-core artifact를 찾지 못하면,  
+    > 생성된 Project 에서 **glue-core** artifact를 찾지 못하면,  
     > [여기](./env-glue.html#library)를 참고해서 Local Repository에 aritifact를 추가하세요.
 
 5. `pom.xml` 을 확인합니다.  
 ![Image](../images/eclipse_check_pom_file.png)
+
+Glue Maven Project 로 생성하면, 다음과 같은 dependency를 포함합니다.  
+* glue-core 
+* jpa
+* rest
+* h2
+* swagger  
 
 ## <a name="archetype"></a>archetype
 

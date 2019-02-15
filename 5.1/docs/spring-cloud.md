@@ -11,7 +11,8 @@
 분산 트레이싱 ( Zipkin, etc )
 
 Spring Cloud 는 여러 Release Trains가 있으며, 
-GlueFramework 예제는 Finchley.SR2 를 사용합니다. 
+GlueFramework 예제는 Finchley.SR2 를 사용합니다.  
+Glue Maven Project로 프로젝트를 생성할 경우에는 다음을 추가하세요. 
 
 ```xml
 <project>
@@ -29,6 +30,6 @@ GlueFramework 예제는 Finchley.SR2 를 사용합니다.
 </project>
 ```
 
-## 참고 
+## Ref. 참고
 
-* [https://spring.io/projects/spring-cloud](https://spring.io/projects/spring-cloud)
+* [Spring Cloud](https://spring.io/projects/spring-cloud)

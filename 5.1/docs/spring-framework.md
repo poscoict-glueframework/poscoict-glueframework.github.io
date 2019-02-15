@@ -194,7 +194,7 @@ public class GlueConfiguration
 }
 ```
 
-## 참고 
+## Ref. 참고 
 
 * [https://spring.io/projects/spring-framework](https://spring.io/projects/spring-framework)
 * [https://docs.spring.io/spring/docs/5.0.10.RELEASE/javadoc-api/](https://docs.spring.io/spring/docs/5.0.10.RELEASE/javadoc-api/)

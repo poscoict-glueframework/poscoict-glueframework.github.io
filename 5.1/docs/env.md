@@ -1,4 +1,4 @@
-# 개발환경
+# 사전준비
 
 이번 장의 내용을 응용해서 프로젝트에 맞는 개발 환경 구성할 수 있습니다.  
 윈도우 환경이라고 가정하며, 다음과 같은 툴을 사용한다고 가정합니다. 
@@ -8,9 +8,7 @@
 * git
 * Eclipse ( 또는 Spring Tool Suite )
 
-Glue Plugin과 GlueSDK 설치는 [이곳](./env-glue.html)을 참고하세요.
-
-<a name="env"></a>주요 디렉토리 구조는 다음과 같다고 가정합니다.  
+주요 디렉토리 구조는 다음과 같다고 가정합니다.  
 
 > /infra/jdk1.8.0_192  
 > /infra/apache-maven-3.5.4  
@@ -226,4 +224,12 @@ workspace는 *`C:\workspace`* 로 지정한다고 가정합니다.
         ```
         C:\ide\eclipse\eclipse.exe -clean -data C:\workspace
         ```
-        
+
+## Ref. 참고
+
+* [Java Documentation](https://docs.oracle.com/en/java/)
+* [Git Documentation](https://git-scm.com/docs)
+* [Maven User Centre](http://maven.apache.org/users/index.html)
+* [Eclipse](https://www.eclipse.org)
+* [Spring Tools 4](https://spring.io/tools)
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/)

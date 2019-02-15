@@ -14,15 +14,11 @@ JPA와 관련된 주요 annotation 은 다음과 같습니다.
 
 1. Maven Repository
     [Glue Maven Project](../create-project.html#glue_maven_project)로 프로젝트를 생성하면, 
-    pom.xml에 `spring-boot-starter-data-jpa`, `h2` 가 포함되어 있습니다. 
+    pom.xml에 `spring-boot-starter-data-jpa`가 포함되어 있습니다. 
     ```xml
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-jpa</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>com.h2database</groupId>
-        <artifactId>h2</artifactId>
     </dependency>
     ```
 
@@ -53,7 +49,32 @@ JPA와 관련된 주요 annotation 은 다음과 같습니다.
     }
     ```
 
-## Sample
+## <a name="h2"></a>H2
+
+테스트용 DB로 H2를 사용하기 위해서는 h2 dependency가 필요합니다.  
+
+[Glue Maven Project](../create-project.html#glue_maven_project)로 프로젝트를 생성하면, 
+pom.xml에 **h2** 가 포함되어 있습니다. 
+```xml
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+</dependency>
+```
+
+## <a name="mariadb"></a>MariaDB
+
+테스트용 DB로 MariaDB를 사용하기 위해서는 maria dependency가 필요합니다.  
+
+[Glue Maven Project](../create-project.html#glue_maven_project)로 프로젝트의 pom.xml에 **mariadb-java-client** 를 추가합니다.
+```xml
+<dependency>
+    <groupId>org.mariadb.jdbc</groupId>
+    <artifactId>mariadb-java-client</artifactId>
+</dependency>
+```
+
+### Sample
 
 Sample 실행 후, swagger-ui를 통해 data crud를 해보세요. 
 
@@ -65,10 +86,10 @@ $ mvn clean package
 $ java -jar target/sample.jar
 ```
 
-## Try it
+### Try it
 
 H2 에서 MariaDB로 변경해보세요.
 
-## 참고
+## Ref. 참고
 
 * [https://spring.io/guides/gs/accessing-data-jpa/](https://spring.io/guides/gs/accessing-data-jpa/)

@@ -1,8 +1,6 @@
-# H2
+# H2 Console
 
 http://localhost:8080/h2-console
-
-## H2 Web Console
 
 다음 3가지를 충족하면 H2 Web Console을 사용할 수 있습니다. 
 
